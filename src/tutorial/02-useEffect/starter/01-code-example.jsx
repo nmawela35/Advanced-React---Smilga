@@ -2,6 +2,12 @@ import { useState } from 'react';
 
 const CodeExample = () => {
   const [value, setValue] = useState(0);
+  // console.log(value)
+  const sayHello =() => {
+    console.log('Page renders')
+  }
+  sayHello();
+
 
   return (
     <div>
