@@ -1,5 +1,6 @@
-import Starter from './tutorial/03-conditional-rendering/starter/01-multiple-returns-basics';
-import Starter from './tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data';
+// import Starter from './tutorial/03-conditional-rendering/starter/01-multiple-returns-basics';
+// import Starter from './tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data';
+import Starter from './tutorial/03-conditional-rendering/starter/03-hooks-rule';
 
 function App() {
   return (
