@@ -37,7 +37,6 @@ const FetchData = () => {
 
         })
       }
-
     </ul>
   </section>;
 };
