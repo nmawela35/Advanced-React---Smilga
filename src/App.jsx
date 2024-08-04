@@ -1,4 +1,4 @@
-import Forms from './tutorial/06-forms/starter/01-controlled-inputs'
+import Forms from './tutorial/06-forms/starter/02-user-challenge'
 
 function App() {
   return (

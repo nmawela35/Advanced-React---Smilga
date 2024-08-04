@@ -8,11 +8,11 @@ const ControlledInputs = () => {
     // console.log(e.target.name)
     // console.log(e.target.value)
     setName(e.target.value)
-    clg(name)
+    console.log(name)
   }
   const handleSubmit =(e)=>{
     e.preventDefault()
-    console.log(name, email)
+    // console.log(name, email)
   }
 
   return (
