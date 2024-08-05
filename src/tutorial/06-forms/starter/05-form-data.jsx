@@ -5,6 +5,17 @@ const UncontrolledInputs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget)
+    // console.log(formData)
+    const email =formData.get('email');
+    // console.log(email)
+    const password =formData.get('password');
+    // console.log(password)
+    console.log([...formData.entries()])
+    const newUser = Object.fromEntries(formData)   //Turns form data to an Object
+    // console.log(newUser)
+    setValue(value+1);
+    e.currentTarget.reset();  //clear the form
   };
   return (
     <div>
@@ -12,34 +23,23 @@ const UncontrolledInputs = () => {
         <h4>Form Data API</h4>
         {/* name */}
         <div className='form-row'>
-          <label htmlFor='name' className='form-label'>
-            name
-          </label>
+          <label htmlFor='name' className='form-label'>name </label>
           <input type='text' className='form-input' id='name' name='name' />
         </div>
         {/* email */}
         <div className='form-row'>
-          <label htmlFor='email' className='form-label'>
-            Email
-          </label>
+          <label htmlFor='email' className='form-label'>Email</label>
           <input type='email' className='form-input' id='email' name='email' />
         </div>
-        {/* email */}
+
+        {/* password */}
         <div className='form-row'>
-          <label htmlFor='password' className='form-label'>
-            Password
-          </label>
-          <input
-            type='password'
-            className='form-input'
-            id='password'
-            name='password'
-          />
+          <label htmlFor='password' className='form-label'>Password</label>
+          <input type='password' className='form-input' id='password' name='password'/>
         </div>
 
-        <button type='submit' className='btn btn-block'>
-          submit
-        </button>
+        <button type='submit' className='btn btn-block'>submit</button>
+        
       </form>
     </div>
   );
